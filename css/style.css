@@ -207,9 +207,9 @@ header {
 .grid-container {
     display: grid;
     grid-template-areas: 
-    "parrafo-index foto1"
-    "parrafo-index foto2";
-    grid-template-columns: 2fr 1fr  ;
+    "parrafo-index parrafo-index foto1"
+    "parrafo-index parrafo-index foto2";
+    grid-template-columns: 3fr 1fr  ;
     align-items: center;
     gap: 20px;
     background-color: #0116386b;
@@ -219,7 +219,7 @@ header {
 .foto1, .foto2 {
     max-width: 100%;
     height: 300px;
-    width: 100%;
+    width: 450px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -327,53 +327,63 @@ header {
 
 @media (max-width: 992px) {
     .grid-container {
-        display:block;
-        
-        text-align: start;
-        background-position: left;
-        
-        font-size: 10px;
-    }
-
-    .cuadro-color {
-        font-size: 20px;
-        max-width: 100%;
-    }
-
-    .container {
-        margin: 0px 0px 0px 0px;
-        padding-left: -10px;
+    display: grid;
+    grid-template-areas: 
+    "parrafo-index foto1"
+    "parrafo-index foto2";
+    grid-template-columns: 2fr 1fr;
+    font-size: 10px;
+    
     }
 
     #galeria {
-        align-items: center;
-        background-position: center;
-        background-size: cover;
+        margin-left: 10px;
+    }
+
+    .cuadro-color {
+        font-size: 7px;
+        height: 600px;
+        width: 580px;
+    }
+
+    .c {
+    width: 520px;
+    }
+    
+    .c p {
+        font-size: 15px;
         
     }
+
+    
 
     .foto1, .foto2 {
-        
-        height: 300px;
-        width: 500px;
-        align-items: center;
+        width: 350px;
+        height: 230px;
     }
+
+    .container {
+    margin: 0px 0px 0px 0px;
+    padding: -5px;
+   
+    }
+        
 
     .parrafo-index {
-        margin-left: -50px;
+        font-size: 13.5px;
+        width: 480px;
     }
-
+    
     .seccion-premios {
         display: block;
-
-        
     }
 
     .b {
         height: 300px;
-        width: 480px;
+        width: 440px;
     }
 }
+
 
 @media (max-width: 767px) {
 
@@ -415,6 +425,10 @@ header {
             width: 30px;
         }
 
+        .grid-container {
+            display: block;
+        }
+
 }
 
 .footer {
@@ -434,6 +448,73 @@ header {
 .footer2 {
     background-color: #44722a2c;
 }
+
+
+@media (max-width: 425px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        "parrafo-index foto1"
+        "parrafo-index foto2";
+        grid-template-columns: 2fr ;
+        width: 885px;
+        height: 600px;
+        margin-top: -5px;
+        }
+
+    .parrafo-index {
+        font-size: 12px;
+        width: 370px;
+        
+
+    }
+
+    .cuadro-color {
+        width: 500px;
+        height: 400px;
+        margin-top: -20px;
+    }
+
+    .logo {
+        width: 600px;
+
+    }
+
+    header {
+        width: 885px;
+    }
+
+    .container {
+        width: 100%;
+        background-position: center;
+        
+        
+    }
+
+    .foto1 {
+        margin-top: 5px;
+    }
+
+    .foto1, .foto2 {
+        height: 220px;
+        width: 320px;
+    }
+
+    .fondo-pagina2 {
+        width: 885px;
+    }
+
+    #galeria {
+        margin-top: 30px;
+    }
+
+
+
+
+        
+}
+
+
         
         
         
