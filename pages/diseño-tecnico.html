@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño tecnico</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="description" content="En esta seccion te mostramos como esta diseñado el juego de forma tecnica">
+    <meta name="keywords" content="diseño de los personajes the last of us, ambiente del the last of us, motor grafico the last of us">
+    <link rel="shortcut icon" href="../img/fondo favicon.jpg" type="The_Last_of_Us">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body class="fondo-pagina2">
     
 <header>
 
-    <a href="index.html">
+    <a href="../index.html">
         <img src="../img/the-last-of-us-part-ii-logo.png" alt="logo-pagina" class="logo">
     </a>
     
@@ -22,30 +26,30 @@
             </li>
 
             <li>
-                <a href="../pages/argumento.html" class="enlaces">argumento</a>
+                <a href="argumento.html" class="enlaces">argumento</a>
             </li>
 
             <li>
-                <a href="../pages/banda-sonora.html" class="enlaces">banda sonora</a>
+                <a href="banda-sonora.html" class="enlaces">banda sonora</a>
             </li>
 
             <li>
-                <a href="../pages/diseño-tecnico.html" class="enlaces">diseño tecnico</a>
+                <a href="diseño-tecnico.html" class="enlaces">diseño tecnico</a>
             </li>
 
             <li>
-                <a href="../pages/modo-de-juego.html" class="enlaces">modo de juego</a>
+                <a href="modo-de-juego.html" class="enlaces">modo de juego</a>
             </li>
             
         </ul>
     </nav>
 </header>
-<section>
-<h1 class="h1-diseño">
+<section class="parrafo-tecnico">
+<h1>
     diseño tecnico:
 </h1>
 
-<div class="parrafo-tecnico">
+<div class="padre-textofoto">
     <p>
         Se crearon nuevos motores de juego para satisfacer algunos requerimientos del título. El motor de iluminación, por ejemplo, incorporó luz tenue para producir el efecto de la luz solar que se filtra a través de espacios y se refleja en las superficies. Para obtener una mejor calidad de iluminación, se emplearon lightmaps —estructuras de datos en las que se precalcula y almacena el brillo de las superficies virtuales en mapas de texturas para su eventual uso durante una animación— y se modificó la intensidad de los téxeles.En cuanto al sistema de juego, el equipo tuvo ciertas demoras debido a que realizaban un análisis exhaustivo de cada mecánica del juego.
         De forma similar, el diseño de interfaz de usuario también pasó por varias etapas de producción.
@@ -59,10 +63,31 @@ Al igual que los otros apartados de producción, una parte considerable del dise
 Para la simulación y animación de los personajes, se utilizó un sistema de controles faciales —joint-based facial rigs— y algunas aplicaciones deformadoras para emular los movimientos de los actores. Se simularon los rostros con la boca abierta y los ojos ligeramente cerrados con la intención de evitar que estos perdieran su forma o produjesen movimientos indeseados durante la fase de animación. Dicha simulación estuvo basada en el Sistema de Codificación Facial. En su esfuerzo por brindar un mayor realismo al diseño de los personajes, los equipos de Naughty Dog agregaron una opción que permite la dilatación pupilar en los personajes. El diseño del resto de su cuerpo resultó de la edición de los modelos utilizados para los protagonistas de Uncharted 2, con algunas modificaciones menores que incluyeron la adición de una herramienta que permite emular los movimientos del carpo, lo cual resultó útil al momento de producir una mayor cantidad de formas dinámicas de las manos y una mayor flexibilidad; y otra para el sistema muscular, con ayuda del programa Autodesk Maya. Otra característica innovadora fue la implementación de sistemas en tiempo de ejecución para evitar que el vestuario de los personajes tuviese movimientos incongruentes con respecto a las acciones de los personajes. Cada modelo individual requirió el uso de 326 articulaciones,  de las cuales se encuentran en el rostro
     </p>
 
-
+    <div id="foto-diseño"></div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </section>
+
+<footer class="footer2">
+    <h3 class="footer">Redes sociales: Naughty Dog:</h3>
+
+    <div>
+        <a href="https://www.instagram.com/naughty_dog_inc/" target="_blank">
+            <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="https://twitter.com/Naughty_Dog" target="_blank">
+            <i class="bi bi-twitter-x"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@naughtydog" target="_blank">
+            <i class="bi bi-youtube"></i>
+        </a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>
