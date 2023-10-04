@@ -345,6 +345,13 @@ header {
     border-radius: 5px;
 }
 
+@media (max-width: 1200px) {
+    .fondo-pagina2 {
+        width: 1530px;
+    }
+}
+
+
 @media (max-width: 992px) {
     .grid-container {
     display: grid;
