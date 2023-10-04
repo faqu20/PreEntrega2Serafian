@@ -395,6 +395,7 @@ header {
   }
   .grid-container {
     margin-top: -15px;
+    height: 1050px;
   }
   .seccion-premios {
     height: 700px;
@@ -407,10 +408,13 @@ header {
     font-size: 17px;
   }
   .cuadro-color {
-    height: 650px;
+    height: 770px;
   }
   .foto2 {
     margin-top: 0%;
+  }
+  .parrafo-index {
+    font-size: 15px;
   }
   .foto1, .foto2 {
     display: inline-block;
@@ -522,16 +526,22 @@ header {
     grid-template-areas: "parrafo-index foto1" "parrafo-index foto2";
     grid-template-columns: 2fr;
     width: 885px;
-    height: 800px;
+    height: 950px;
     margin-top: -5px;
   }
+  body {
+    zoom: 47%;
+  }
+  .seccion-premios {
+    height: 810px;
+  }
   .parrafo-index {
-    font-size: 14px;
+    font-size: 16px;
     width: 370px;
   }
   .cuadro-color {
     width: 500px;
-    height: 600px;
+    height: 920px;
     margin-top: 10px;
   }
   .logo {
@@ -543,6 +553,7 @@ header {
   .container {
     width: 100%;
     background-position: center;
+    height: 850px;
   }
   .foto1 {
     margin-top: 5px;
@@ -562,11 +573,11 @@ header {
     margin-bottom: 0%;
   }
   .c {
-    height: 700px;
+    height: 780px;
   }
   .c p {
     height: 690px;
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 
