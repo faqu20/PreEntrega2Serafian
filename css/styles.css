@@ -343,6 +343,9 @@ header {
     grid-template-columns: 2fr 1fr;
     font-size: 10px;
   }
+  .fondo-pagina2 {
+    width: 975px;
+  }
   #galeria {
     margin-left: 10px;
   }
@@ -378,11 +381,34 @@ header {
   }
 }
 @media (max-width: 767px) {
-  .foto1, .foto2 {
-    margin-top: 280px;
+  .fondo-pagina2 {
+    width: 883px;
+  }
+  #galeria {
+    margin-top: 20px;
+    justify-content: space-evenly;
+  }
+  .grid-container {
+    margin-top: -15px;
+  }
+  .seccion-premios {
+    height: 700px;
+  }
+  .c {
+    height: 630px;
+  }
+  .c p {
+    height: 620px;
+    font-size: 17px;
+  }
+  .cuadro-color {
+    height: 650px;
   }
   .foto2 {
-    margin-top: 15px;
+    margin-top: 0%;
+  }
+  .foto1, .foto2 {
+    display: inline-block;
   }
   .seccion-premios {
     display: block;
@@ -432,23 +458,76 @@ header {
   text-align: center;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 576px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: "parrafo-index parrafo-index foto1" "parrafo-index parrafo-index foto2";
+    grid-template-columns: 3fr 1fr;
+    width: 885px;
+    height: 800px;
+    margin-top: -5px;
+  }
+  .parrafo-index {
+    font-size: 16px;
+    width: 370px;
+    height: 200px;
+  }
+  .cuadro-color {
+    width: 600px;
+    height: 700px;
+    margin-top: -20px;
+  }
+  .logo {
+    width: 600px;
+  }
+  header {
+    width: 885px;
+  }
+  .container {
+    width: 700px;
+    height: 300px;
+    background-position: cente;
+  }
+  .foto1 {
+    margin-top: 5px;
+  }
+  .foto1, .foto2 {
+    height: 150px;
+    width: 240px;
+  }
+  .fondo-pagina2 {
+    width: 885px;
+  }
+  .foto2 {
+    margin-top: 40px;
+  }
+  .c {
+    height: 700px;
+    width: 510px;
+    margin-top: -45px;
+  }
+  .c p {
+    height: 690px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
   .grid-container {
     display: grid;
     grid-template-areas: "parrafo-index foto1" "parrafo-index foto2";
     grid-template-columns: 2fr;
     width: 885px;
-    height: 600px;
+    height: 800px;
     margin-top: -5px;
   }
   .parrafo-index {
-    font-size: 12px;
+    font-size: 14px;
     width: 370px;
   }
   .cuadro-color {
     width: 500px;
-    height: 400px;
-    margin-top: -20px;
+    height: 600px;
+    margin-top: 10px;
   }
   .logo {
     width: 600px;
@@ -469,9 +548,20 @@ header {
   }
   .fondo-pagina2 {
     width: 885px;
+    height: auto;
   }
   #galeria {
     margin-top: 30px;
+  }
+  .logo {
+    margin-bottom: 0%;
+  }
+  .c {
+    height: 700px;
+  }
+  .c p {
+    height: 690px;
+    font-size: 18px;
   }
 }
 
