@@ -5,8 +5,8 @@
 }
 
 .logo {
-  width: 550px;
   height: 290px;
+  width: 550px;
   display: block;
   margin: auto;
   margin-top: -85px;
@@ -39,8 +39,8 @@ a {
 
 .cuadro-color {
   background-color: rgba(0, 0, 0, 0);
-  width: 900px;
   height: 900px;
+  width: 900px;
   font-size: 27px;
   margin-top: 20px;
   color: #D66853;
@@ -53,8 +53,8 @@ h2 {
 }
 
 .logo-principal {
-  width: 900px;
   height: 900px;
+  width: 900px;
 }
 
 .parrafo-index {
@@ -104,15 +104,15 @@ section h1 {
 }
 
 .fondo-modito {
-  width: 400px;
   height: 300px;
+  width: 400px;
   border-radius: 12px;
   border: solid 3px rgb(113, 113, 113);
 }
 
 .h1-del-sonora {
   text-decoration: underline;
-  color: #273043;
+  color: #599855;
   margin-bottom: 15px;
   margin-top: 5px;
 }
@@ -158,8 +158,8 @@ h1 {
 
 .padre-textofoto {
   display: flex;
-  background-position: center;
   flex-direction: column;
+  background-position: center;
   align-items: center;
   flex-wrap: wrap;
   align-items: center;
@@ -274,6 +274,10 @@ header {
 .seccion-premios {
   background-color: rgba(169, 169, 169, 0.387);
 }
+.seccion-premios h2 {
+  font-size: 40px;
+  color: #68911b;
+}
 
 .rounded {
   height: 350px;
@@ -319,6 +323,10 @@ header {
 
 .armas {
   width: 100%;
+}
+
+.fondo-armas h2 {
+  color: #5723d1;
 }
 
 .img-armas {
@@ -395,7 +403,7 @@ header {
   }
   .grid-container {
     margin-top: -15px;
-    height: 1050px;
+    height: 1300px;
   }
   .seccion-premios {
     height: 700px;
@@ -407,8 +415,13 @@ header {
     height: 620px;
     font-size: 17px;
   }
+  .container {
+    max-width: none;
+    margin: 0px 0px 0px 0px;
+  }
   .cuadro-color {
     height: 770px;
+    width: 870px;
   }
   .foto2 {
     margin-top: 0%;
@@ -472,19 +485,19 @@ header {
     display: grid;
     grid-template-areas: "parrafo-index parrafo-index foto1" "parrafo-index parrafo-index foto2";
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
     width: 885px;
-    height: 800px;
+    height: 1500px;
     margin-top: -5px;
   }
   .parrafo-index {
-    font-size: 16px;
+    font-size: 22px;
     width: 370px;
-    height: 200px;
+    height: 1500px;
   }
   .cuadro-color {
     width: 600px;
-    height: 700px;
-    margin-top: -20px;
+    height: 1500px;
   }
   .logo {
     width: 600px;
@@ -494,14 +507,14 @@ header {
   }
   .container {
     width: 700px;
-    height: 300px;
+    height: 1100px;
     background-position: cente;
   }
   .foto1 {
-    margin-top: 5px;
+    margin-bottom: 200px;
   }
   .foto1, .foto2 {
-    height: 150px;
+    height: 160px;
     width: 240px;
   }
   .fondo-pagina2 {
@@ -519,29 +532,43 @@ header {
     height: 690px;
     font-size: 18px;
   }
+  .seccion-premios {
+    height: 1250px;
+  }
+  .c {
+    height: 1250px;
+  }
+  .c p {
+    height: 1250px;
+    font-size: 23px;
+  }
+  .b {
+    height: 250px;
+  }
 }
 @media (max-width: 480px) {
   .grid-container {
     display: grid;
     grid-template-areas: "parrafo-index foto1" "parrafo-index foto2";
-    grid-template-columns: 2fr;
+    grid-template-columns: 1.25fr 0.75fr;
+    grid-template-rows: 1fr;
     width: 885px;
-    height: 950px;
+    height: 1900px;
     margin-top: -5px;
   }
   body {
     zoom: 47%;
   }
   .seccion-premios {
-    height: 810px;
+    height: 1250px;
   }
   .parrafo-index {
-    font-size: 16px;
-    width: 370px;
+    font-size: 23px;
+    width: 430px;
   }
   .cuadro-color {
-    width: 500px;
-    height: 920px;
+    width: 530px;
+    height: 1800px;
     margin-top: 10px;
   }
   .logo {
@@ -551,15 +578,21 @@ header {
     width: 885px;
   }
   .container {
-    width: 100%;
-    background-position: center;
-    height: 850px;
+    height: 1800px;
+    width: 700px;
+  }
+  .container h1 {
+    font-size: 35px;
+  }
+  .container .containe {
+    height: 1000px;
   }
   .foto1 {
     margin-top: 5px;
+    margin-bottom: 150px;
   }
   .foto1, .foto2 {
-    height: 220px;
+    height: 230px;
     width: 320px;
   }
   .fondo-pagina2 {
@@ -567,17 +600,21 @@ header {
     height: auto;
   }
   #galeria {
-    margin-top: 30px;
+    margin-top: 0%;
+    margin-left: 0%;
   }
   .logo {
     margin-bottom: 0%;
   }
   .c {
-    height: 780px;
+    height: 1150px;
   }
   .c p {
-    height: 690px;
-    font-size: 19px;
+    height: 1150px;
+    font-size: 23px;
+  }
+  .b {
+    height: 280px;
   }
 }
 
