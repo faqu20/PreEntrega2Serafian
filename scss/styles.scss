@@ -296,14 +296,28 @@ section {
     }
     }
 
-    @media screen and (max-width: 470px) {
-        .header {
-            text-align: center;
+    @media screen and (max-width: 520px) {
+        .container {
+            width: 80%;
+            margin: 100px 5px 5px 5px
         }
-        .container .content {
-            grid-column: 1 / -1;
+        
         }
-        .container .sidebar {
-            grid-column: 1 / 6;
+    
+        @media screen and (max-width: 470px) {
+            .container {
+                width: 90%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+    
+            .sidebar {
+                margin-left: 25px;
+            }
         }
-        }
+
+        
+
+
+
+        
