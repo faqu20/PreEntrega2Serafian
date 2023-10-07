@@ -326,9 +326,21 @@ section {
                 
         
             }
-        }
 
         
+        }
+
+        @media screen and (max-width: 320px) {
+            .container {
+                width: 80%;
+                display: flex;
+                flex-wrap: wrap;
+                
+                zoom: 96%;
+            }
+
+        
+        }
 
 
 
