@@ -293,12 +293,20 @@ section {
     display: flex;
     flex-wrap: wrap;
   }
+  body {
+    zoom: 96%;
+  }
+  .footer {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 320px) {
   .container {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
+  }
+  body {
     zoom: 96%;
   }
 }
