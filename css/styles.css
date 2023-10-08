@@ -25,6 +25,45 @@ nav {
   position: fixed;
 }
 
+.home {
+  margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.in-flex {
+  flex: 1;
+  min-width: 250px;
+  border-radius: 10px;
+}
+
+.in-flex:first-child {
+  flex: 2;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.329);
+  margin: 20px;
+  margin-bottom: 0px;
+  font-size: 22px;
+  color: rgb(255, 153, 0);
+}
+.in-flex:first-child h1 {
+  font-size: 35px;
+  color: rgb(231, 37, 37);
+  text-decoration: underline;
+}
+
+.foto-argument {
+  width: 100%;
+}
+
+.in-flex div {
+  padding: 25px;
+  background-color: rgba(114, 119, 106, 0.308);
+  margin: 20px;
+  border-radius: 10px;
+  color: rgb(161, 230, 1);
+}
+
 .navi {
   margin-top: -60px;
 }
@@ -307,7 +346,7 @@ section {
     flex-wrap: wrap;
   }
   body {
-    zoom: 96%;
+    zoom: 90%;
   }
 }
 
