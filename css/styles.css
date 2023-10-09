@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   overflow-x: hidden !important;
 }
@@ -33,13 +34,32 @@ nav {
   height: 90%;
 }
 
+.footer4 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.514);
+  height: 135px;
+  justify-content: center;
+}
+.footer4 h4 {
+  font-size: 35px;
+  text-decoration: underline;
+  color: #9f8e10;
+}
+.footer4 div {
+  font-size: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .footer3 {
   display: flex;
   flex-wrap: wrap;
   margin-top: 5px;
+  height: 95%;
   width: 100%;
   background-color: rgba(128, 128, 128, 0.514);
-  height: 95%;
   justify-content: center;
 }
 .footer3 h4 {
@@ -53,6 +73,14 @@ nav {
   justify-content: space-evenly;
 }
 
+@media (max-width: 320px) {
+  .footer4 h4 {
+    font-size: 25px;
+  }
+  .footer4 div {
+    font-size: 45px;
+  }
+}
 .in-flex {
   flex: 1;
   min-width: 250px;
@@ -70,7 +98,7 @@ nav {
 }
 .in-flex:first-child h1 {
   font-size: 35px;
-  color: rgb(231, 37, 37);
+  color: rgb(214, 23, 23);
   text-decoration: underline;
 }
 
@@ -187,7 +215,7 @@ section {
   }
   li a:hover, li a.active {
     background: none;
-    color: red;
+    color: rgb(214, 23, 23);
   }
   #check:checked ~ ul {
     left: 0;
@@ -208,6 +236,193 @@ section {
   text-decoration: underline;
 }
 
+.texto h3 {
+  color: rgb(115, 255, 0);
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+#somos-proya .container {
+  text-align: center;
+  padding: 30px 12px;
+}
+
+.img-container img {
+  width: 100%;
+}
+.img-container h2 {
+  color: green;
+  text-decoration: underline;
+}
+
+.diseño-pa {
+  margin-top: 80px;
+  height: 100%;
+}
+
+.container4 {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgba(240, 240, 240, 0.3019607843);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.container4 p {
+  font-size: 25px;
+}
+
+/* Elementos secundarios */
+.item {
+  background-color: rgba(23, 68, 214, 0.2745098039);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  flex: 1; /* Distribuir el espacio disponible de manera uniforme */
+  margin: 0 10px; /* Espacio entre elementos */
+  border-radius: 10px;
+}
+.item img {
+  margin-bottom: 30px;
+}
+.item p {
+  color: #cab301;
+}
+.item h1 {
+  color: #ce069c;
+  text-decoration: underline;
+  font-size: 30px;
+}
+.item h2 {
+  color: rgb(16, 0, 245);
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+@media (max-width: 1024px) {
+  .adaptable {
+    width: 100%;
+  }
+  .adaptable img {
+    width: 95%;
+  }
+}
+@media (max-width: 760px) {
+  .adaptable {
+    width: 100%;
+  }
+  .adaptable img {
+    width: 95%;
+  }
+}
+@media (max-width: 360px) {
+  .adaptable {
+    width: 100%;
+  }
+  .adaptable img {
+    width: 95%;
+  }
+}
+.foto-proyect {
+  width: 600px;
+}
+
+.img-container {
+  width: 100%;
+  height: 50%;
+}
+.img-container h4 {
+  font-size: 30px;
+  color: rgb(129, 1, 1);
+  text-decoration: underline;
+}
+
+@media (min-width: 450px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+  #hero h1 {
+    font-size: 5em;
+  }
+  #somos-proya .container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #somos-proya .texto {
+    background-color: rgba(44, 62, 80, 0.6901960784);
+    width: 100%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #somos-proya h2 {
+    margin-top: 0px;
+  }
+  #somos-proya .img-container {
+    background-size: cover;
+    background-position: center center;
+    width: 400px;
+  }
+  #caracteristicas .container {
+    text-align: initial;
+  }
+}
+@media (min-width: 850px) {
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+  #somos-proya .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #somos-proya .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #somos-proya h2 {
+    margin-top: 0px;
+  }
+  #somos-proya .img-container {
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  #caracteristicas {
+    background-position-x: calc(100vw - 800px);
+  }
+}
 .container {
   width: 90%;
   margin: 1.6em auto;
@@ -227,6 +442,7 @@ section {
   color: #db4527;
 }
 
+/*BANDA SONORA*/
 .container > .header, .container > .content, .container > .sidebar, .container > .footer, .container > div {
   background: rgba(255, 255, 255, 0.2352941176);
   padding: 5px;
@@ -275,6 +491,14 @@ section {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 320px) {
+  .footer3 h4 {
+    font-size: 26px;
+  }
+  .footer3 div {
+    font-size: 45px;
+  }
+}
 /*SECCION ARMAS*/
 .galeria {
   font-family: "open sans";
@@ -288,6 +512,7 @@ section {
 
 .section-armas {
   margin-top: 80px;
+  height: 100%;
 }
 
 .contenedor-imagenes {
@@ -446,7 +671,7 @@ section {
 @media screen and (max-width: 520px) {
   .container {
     width: 80%;
-    margin: 100px 5px 5px 5px;
+    margin: 80px 5px 5px 5px;
   }
 }
 @media screen and (max-width: 470px) {
@@ -486,7 +711,7 @@ section {
     width: 100%;
   }
   section {
-    width: 95%;
+    width: 100%;
     height: 100%;
   }
   .content {
